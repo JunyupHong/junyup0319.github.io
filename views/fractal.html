@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head><title></title>
+    <link rel="stylesheet" href="../stylesheets/fractal.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+          integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+</head>
+<body>
+<div class="option-zone">
+    <div class="option-name">option</div>
+    <div class="option-bar-zone">
+        <div class="option-bar-name">First Branch Count</div>
+        <input type="range" min="0" max="10" step="1" name="firstBranchCount">
+        <div class="option-bar-name">First Branch Length</div>
+        <input type="range" min="0" max="100" step="0.01" name="firstBranchLength">
+        <div class="option-bar-name">Depth</div>
+        <input type="range" min="0" max="10" step="1" name="depth">
+        <div class="option-bar-name">Child Branch Count</div>
+        <input type="range" min="0" max="6" step="1" name="childBranchCount">
+        <div class="option-bar-name">Child Branch Angle</div>
+        <input type="range" min="0" max="50" step="1" name="childBranchAngle">
+        <div class="option-bar-name">Child Branch Length (radio)</div>
+        <input type="range" min="0" max="2" step="0.01" name="childBranchLength">
+        <div class="option-bar-name">Start Color</div>
+        <input type="color" name="startColor" value="#ff0000">
+        <div class="option-bar-name">End Color</div>
+        <input type="color" name="endColor" value="#ffffff"></div>
+    <div class="button-zone">
+        <div class="draw-button" id="exec">exec</div>
+        <div class="draw-button" id="pause">pause</div>
+    </div>
+</div>
+<div id="canvas"></div>
+<script src="../javascripts/p5.js"></script>
+<script src="../javascripts/fractalSketch.js"></script>
+<script src="../javascripts/fractal.js"></script>
+</body>
+</html>

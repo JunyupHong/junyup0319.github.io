@@ -1,0 +1,21 @@
+.window {
+    width: 100vw;
+    height: 100vh;
+    background: #3e3e3e;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: flex;
+    -webkit-align-items: center;
+    -moz-box-align: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    -moz-box-pack: center;
+    justify-content: center;
+    overflow: auto;
+}
+
+.window .kakaotalk-window {
+    width: 360px;
+    height: 590px;
+    background: #FFEC00;
+}

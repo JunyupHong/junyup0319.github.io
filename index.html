@@ -1,11 +1,40 @@
+<!DOCTYPE html>
 <html>
+<head>
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="stylesheets/index.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="javascripts/p5.js"></script>
+    <script src="javascripts/addons/p5.dom.min.js"></script>
+    <script src="javascripts/addons/p5.sound.min.js"></script>
+    <meta charset="utf-8">
 
-	<head>
-	</head>
-
-	<body>
-		<h1>Hello!</h1>
-	</body>
-
-
+</head>
+<body>
+<div id="canvas"></div>
+<div class="profile-zone">
+    <div class="profile-name">junyup0319.github.io</div>
+    <div class="input-zone"><i class="fas fa-search"></i>
+        <input type="text" placeholder="search tag">
+    </div>
+</div>
+<div class="content-zone">
+    <div class="main-zone">
+        <div class="count-zone">
+            <div class="count-box">
+                <div id="totalNumber" class="count-box-number"></div>
+                <div class="count-box-name">Total Count</div>
+            </div>
+            <div class="count-box">
+                <div id="selectedNumber" class="count-box-number"></div>
+                <div class="count-box-name">Selected</div>
+            </div>
+        </div>
+        <div class="card-zone"></div>
+    </div>
+</div>
+</body>
+<script src="javascripts/index.js"></script>
+<script src="javascripts/indexSketch.js"></script>
 </html>
