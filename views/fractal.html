@@ -6,6 +6,7 @@
           integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"
             integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="../javascripts/canvas2image.js"></script>
 </head>
 <body>
 <div class="option-zone">
@@ -21,15 +22,16 @@
         <input type="range" min="0" max="6" step="1" name="childBranchCount">
         <div class="option-bar-name">Child Branch Angle</div>
         <input type="range" min="0" max="50" step="1" name="childBranchAngle">
-        <div class="option-bar-name">Child Branch Length (radio)</div>
+        <div class="option-bar-name">Child Branch Length (ratio)</div>
         <input type="range" min="0" max="2" step="0.01" name="childBranchLength">
         <div class="option-bar-name">Start Color</div>
         <input type="color" name="startColor" value="#ff0000">
         <div class="option-bar-name">End Color</div>
         <input type="color" name="endColor" value="#ffffff"></div>
     <div class="button-zone">
-        <div class="draw-button" id="exec">exec</div>
-        <div class="draw-button" id="pause">pause</div>
+        <div class="button" id="exec">exec</div>
+        <div class="button" id="pause">pause</div>
+        <div class="button" id="saveButton">save</div>
     </div>
 </div>
 <div id="canvas"></div>
